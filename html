@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Glow Proxy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#080b17;
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:500px;
+    background:#0d1224;
+    border:2px solid #2d2d50;
+    border-radius:25px;
+    padding:25px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.desc{
+    text-align:center;
+    color:#d0d0d0;
+    line-height:1.6;
+}
+
+.info{
+    background:#131b34;
+    border-radius:15px;
+    padding:15px;
+    margin-top:15px;
+    text-align:center;
+}
+
+.active{
+    color:#00ff84;
+    text-align:center;
+    margin:20px 0;
+    font-weight:bold;
+}
+
+input[type=text]{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:#131b34;
+    color:white;
+    margin-bottom:15px;
+}
+
+.check{
+    background:#131b34;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(90deg,#ff4fd8,#5be7ff);
+}
+
+.channels{
+    margin-top:25px;
+}
+
+.channel{
+    background:#131b34;
+    padding:15px;
+    border-radius:15px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>VIP Glow Proxy</h1>
+
+<p class="desc">
+Join the required channels, enter your Telegram ID,
+then activate your IP for the free proxy ports.
+</p>
+
+<div class="info">
+Your IP: <b id="ip">Loading...</b>
+</div>
+
+<div class="info">
+Proxy Port: <b>8086</b>
+</div>
+
+<div class="active">
+Your IP is active until 11:40:42
+</div>
+
+<input type="text" placeholder="Telegram ID">
+
+<div class="check">
+<label>
+<input type="checkbox">
+I have joined all required channels
+</label>
+</div>
+
+<button onclick="activateIP()">
+Activate My IP For 1 Hour
+</button>
+
+<div class="channels">
+<h2>Required Channels</h2>
+
+<div class="channel">
+Official Channel
+</div>
+
+<div class="channel">
+Proxy Updates
+</div>
+
+</div>
+
+</div>
+
+<script>
+fetch("https://api.ipify.org?format=json")
+.then(res => res.json())
+.then(data=>{
+document.getElementById("ip").innerText=data.ip;
+});
+
+function activateIP(){
+alert("Activation Request Sent!");
+}
+</script>
+
+</body>
+</html>
