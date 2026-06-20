@@ -1,0 +1,35 @@
+.proxy-section{
+    margin-top:30px;
+}
+
+.proxy-section h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.proxy-box{
+    background:#02061a;
+    border:2px dashed #00bfff;
+    border-radius:25px;
+    padding:25px;
+    line-height:2;
+    color:white;
+}
+
+.warning-box{
+    margin-top:20px;
+    background:#4a1f00;
+    border:2px solid #c97b00;
+    border-radius:25px;
+    padding:25px;
+    color:#ffd67d;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.footer-text{
+    text-align:center;
+    margin-top:40px;
+    color:#8a8fa5;
+    font-size:20px;
+}
