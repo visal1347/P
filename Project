@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP Glow Proxy</title>
+<title>SAL PROXY</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:Arial,sans-serif;
 }
 
 body{
@@ -102,10 +102,10 @@ button{
 
 <div class="card">
 
-<h1>VIP Glow Proxy</h1>
+<h1>SAL PROXY</h1>
 
 <p class="desc">
-Join the required channels, enter your Telegram ID,
+your Telegram ID
 then activate your IP for the free proxy ports.
 </p>
 
@@ -114,11 +114,11 @@ Your IP: <b id="ip">Loading...</b>
 </div>
 
 <div class="info">
-Proxy Port: <b>8086</b>
+Proxy Port: <b>8086/8080</b>
 </div>
 
 <div class="active">
-Your IP is active until 11:40:42
+Activate My IP For 1 Hour  00:00:00
 </div>
 
 <input type="text" placeholder="Telegram ID">
@@ -135,19 +135,20 @@ Activate My IP For 1 Hour
 </button>
 
 <div class="channels">
-<h2>Required Channels</h2>
+<h2>SAL PROXY</h2>
 
 <div class="channel">
-Official Channel
+USER IP: 162.220.167.141
 </div>
 
 <div class="channel">
-Proxy Updates
+PROXY PORT: 8086
 </div>
 
+<div class="channel">
+MY ID: 1899089499
 </div>
 
-</div>
 
 <script>
 fetch("https://api.ipify.org?format=json")
@@ -161,11 +162,10 @@ alert("Activation Request Sent!");
 }
 </script>
 
+
 </body>
-</html>
 
-
-<div class="proxy-section">
+ <div class="proxy-section">
 
     <h2>Proxy Information</h2>
 
@@ -190,40 +190,3 @@ alert("Activation Request Sent!");
     </div>
 
 </div>
-
-
-.proxy-section{
-    margin-top:30px;
-}
-
-.proxy-section h2{
-    font-size:38px;
-    margin-bottom:20px;
-}
-
-.proxy-box{
-    background:#02061a;
-    border:2px dashed #00bfff;
-    border-radius:25px;
-    padding:25px;
-    line-height:2;
-    color:white;
-}
-
-.warning-box{
-    margin-top:20px;
-    background:#4a1f00;
-    border:2px solid #c97b00;
-    border-radius:25px;
-    padding:25px;
-    color:#ffd67d;
-    line-height:1.8;
-    font-size:18px;
-}
-
-.footer-text{
-    text-align:center;
-    margin-top:40px;
-    color:#8a8fa5;
-    font-size:20px;
-}
